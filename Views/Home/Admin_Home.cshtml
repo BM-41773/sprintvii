@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Admin_Home";
+}
+
+<h2></h2>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="~/content/stylesheet/StyleSheet1.css" rel="stylesheet" />
+    <script src="~/content/script/profile.js"></script>
+ 
+ 
+</head>
+
+    <body id="body">
+
+
+        <div class="container-fluied">
+            <div class="row">
+                <div class="col-md-12" style="background-color:Blue; height: 80px; ">
+                    <div>
+                        <i class="fi-social-facebook"></i>  <input type="text" name="srchterm" class="X_Firstname1" placeholder="Search Facebook" style="margin-left:60px; margin-top:20px; width:350px; height:28px;" /><button type="button" value="S" name="cmd1" class="glyphicon glyphicon-search" style="height:27px; color:Silver;"></button> @*class="icon-search" id="srh" />*@
+                        <!--<input type="text"  name="srchterm" class="serch" /> 
+                            <input type="submit" value="s" name= "cmd" style="height:29px; color:Silver;"  class="icon-search" id="srh" onclick="srh_onclick()"/>!--><!--<input class="form-control" name="srchterm" placeholder="Search Facebook"  type="text" style="margin-left:60px; margin-top:20px; width:402px; height:28px;">-->
+
+                        @*<img src="@ViewData["profile"]" style="margin-left:400px;margin-top:10px; height: 49px;" /><input type="hidden" value="@ViewData["mainloginid"]" id="X_mainloginid" /><label style="color:white;">@ViewData["frstname"]@ViewData["srname"]</label> *@
+                        <input type="button" class="btn-success" value="Logout" style="margin-left:250px; height:30px;  width:90px;" /><div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" style="margin-left:830px; margin-top:-28px;" type="button" data-toggle="dropdown">Welcome Admin
+       
+        <span class="caret"></span>
+    </button>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4" style="background-color:silver; width:1400px; height:637px; margin-top:0px;">
+                    @*<img src="@ViewData["profile"]" class="Imgsrc" style="margin-left:5px; margin-top:3px; height: 37px;" /><label style="color:white;">@ViewData["frstname"]@ViewData["srname"]</label><br /><br />*@
+                    @*<img src="../../content/images/index.png" style="margin-left:5px; margin-top:3px; height:37px" /> Edit profile<br /><br />*@
+                    <i class="glyphicon glyphicon-pencil" style="color:blue"></i> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#" id="P" style="margin-top:2px">User Profile</a><br /><br />
+                    <i class="glyphicon glyphicon-pencil" style="color:blue"></i>&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" id="pnding">Pending Approvel</a><br /><br />
+                    @*<a href="#" id="newsfeed">News Feed</a><br />
+                    <a href="#" id="updates">Update status</a><br />
+                    <a href="#" id="lnk_edit">Edit profile</a>*@
+                </div>
+                                @*<div id="imgfeed" style="align:left;" hidden class="upload" />
+                
+
+            <input type="file" id="uploding" multiple class="pst" style="opacity:0.0;filter:alpha(opacity=0);visibility:hidden;" accept="image/png" onchange="document.getElementById('imgs').value=this.value" /><input type="text" id="imgs" hidden />
+        </div>*@
+                <!--<div id="imgfeed" style="align:left;visibility:hid"  class="PF" /></div>-->
+
+
+
+
+            <div class="col-md-7" style="background-color:silver; width:880px;">
+               
+                <!--<pre  style="width:511px;  margin-top:3px;">&nbsp;</pre><br />-->
+                @*<pre id="sch" style="height:150px;"><img src="content/images/index.png" style="height:37px;" /><a href="#">update Status</a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="content/images/imagess.jpg" style="height:37px;" /><a href="#" id="vedioimg" />Add  Photos/Vedios </a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../Content/index.png" style="height:37px;" />Writes Notes<br />
+                <img src="@ViewData["profile"]" style="height:37px;" /><input type="text" id="poststatus" style="height:30px; margin-left:3px;" placeholder="What's on your maint?" />
+                <input type="submit" id="btnpost" value="Post" style="margin-left:220px; background-color:green; " /></pre>*@
+
+
+
+                @*@if (Model == null)
+                    {
+                        <pre style=" height:450px;"></pre>
+                        return;
+                    }
+                    @foreach (var lat in Model)
+                    {  <pre><img src="(lat.X_propic)" style="height:57px;" /><p> @lat.X_Firstname |  @lat.X_Surname| <input type="submit"style="margin-left:330px;" value="Add Friend" /></p></pre>
+                    }*@
+                @*<div class="load" />
+            </div>
+            <div style="background-color:white;margin-top:4px;" class="nws" />
+        </div>
+        <div style="background-color:white; margin-top:4px;" class="fint" hidden /></div>*@
+
+
+        </div>
+
+        @*<div class="col-md-1" style="background-color:Silver; height:693px; width:540px ;">
+            <pre style="width:420px;"> Your ads
+            <div style="background-color:Blue; height:470px; width:300px; margin-left:50px;"></div></pre>*@
+        </div>
+        </div>
+
+
+    </body>
+</html>
